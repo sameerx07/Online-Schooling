@@ -9,6 +9,7 @@ import BlogDetail from "./pages/BlogDetail";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
+import ScrollToTopOnMount from "@/components/ScrollToTopOnMount";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +19,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTopOnMount />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/subjects/:id" element={<SubjectDetail />} />

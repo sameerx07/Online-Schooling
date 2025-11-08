@@ -49,7 +49,7 @@ export const AboutSection = () => {
         </motion.div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
+        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
           {stats.map((stat, index) => (
             <motion.div
               key={index}
@@ -67,7 +67,7 @@ export const AboutSection = () => {
               <p className="text-muted-foreground">{stat.label}</p>
             </motion.div>
           ))}
-        </div>
+        </div> */}
 
         {/* Values Section */}
         <div className="space-y-20">

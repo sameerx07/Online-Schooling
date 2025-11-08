@@ -15,7 +15,7 @@ import { EnrollmentAlert } from "@/components/EnrollmentAlert";
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <AlertBanner />
+      {/* <AlertBanner /> */}
       <Navbar />
       <main className="pt-16">
         <HeroSection />

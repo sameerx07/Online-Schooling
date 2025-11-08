@@ -57,8 +57,8 @@ export const HeroSection = () => {
           key={currentSlide}
           initial={{ opacity: 0, scale: 1.1 }}
           animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.9 }}
-          transition={{ duration: 1 }}
+          exit={{ opacity: 0, scale: 0.95 }}
+          transition={{ duration: 1.5, ease: "easeInOut" }}
           className="absolute inset-0 z-0"
         >
           <div
@@ -67,7 +67,7 @@ export const HeroSection = () => {
               backgroundImage: `url(${slides[currentSlide].content})`,
             }}
           >
-            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
           </div>
         </motion.div>
       </AnimatePresence>
@@ -108,26 +108,34 @@ export const HeroSection = () => {
             <motion.div
               custom={3}
               variants={textVariants}
-              className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+              className="flex flex-col sm:flex-row gap-6 justify-center items-center"
             >
-              <a href="#subjects">
+              <motion.a 
+                href="/#subjects"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
                 <Button
                   size="lg"
                   variant="outline"
-                  className="glass-card text-white border-white/30 hover:bg-white/20 hover:scale-105 transition-smooth group"
+                  className="glass-card text-white border-2 border-white/50 hover:bg-white/20 transition-smooth group px-10 py-7 text-lg"
                 >
                   Explore Subjects
                   <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
-              </a>
-              <a href="#enrollment">
+              </motion.a>
+              <motion.a 
+                href="/#enrollment"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
                 <Button
                   size="lg"
-                  className="gradient-primary text-white hover:shadow-glow hover:scale-105 transition-smooth"
+                  className="gradient-primary text-white hover:shadow-glow transition-smooth px-10 py-7 text-lg"
                 >
-                  Enroll Now
+                  Enroll Now →
                 </Button>
-              </a>
+              </motion.a>
             </motion.div>
           </motion.div>
         </AnimatePresence>
@@ -137,31 +145,50 @@ export const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8 }}
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex gap-3"
+          className="absolute bottom-24 left-1/2 transform -translate-x-1/2 flex gap-3 z-20"
         >
           {slides.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}
-              className={`w-3 h-3 rounded-full transition-all ${
+              className={`h-2 rounded-full transition-all ${
                 index === currentSlide
                   ? "bg-accent w-8 shadow-glow"
-                  : "bg-white/50 hover:bg-white/80"
+                  : "bg-white/50 hover:bg-white/80 w-2"
               }`}
             />
           ))}
         </motion.div>
       </div>
 
-      {/* Scroll Indicator */}
+      {/* Scroll Down Indicator */}
       <motion.div
-        animate={{ y: [0, 10, 0] }}
-        transition={{ repeat: Infinity, duration: 2 }}
-        className="absolute bottom-20 left-1/2 transform -translate-x-1/2 hidden md:block"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5, duration: 1 }}
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
       >
-        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center pt-2">
-          <div className="w-1 h-2 bg-white/70 rounded-full" />
-        </div>
+        <motion.a
+          href="/#about"
+          animate={{ y: [0, 10, 0] }}
+          transition={{ repeat: Infinity, duration: 2 }}
+          className="flex flex-col items-center text-white/70 hover:text-white transition-smooth cursor-pointer"
+        >
+          <span className="text-sm mb-2 font-medium">Scroll Down</span>
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 14l-7 7m0 0l-7-7m7 7V3"
+            />
+          </svg>
+        </motion.a>
       </motion.div>
     </section>
   );

@@ -50,7 +50,7 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden -mt-8">
       {/* Background Carousel */}
       <AnimatePresence mode="wait">
         <motion.div

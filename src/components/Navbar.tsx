@@ -51,17 +51,19 @@ export const Navbar = () => {
       >
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            {/* Logo */}
-            <Link to="/" className="flex items-center gap-2">
-              <motion.div
-                whileHover={{ rotate: 360, scale: 1.1 }}
-                transition={{ duration: 0.6 }}
-                className="w-10 h-10 gradient-primary rounded-lg flex items-center justify-center shadow-glow"
-              >
-                <span className="text-white text-xl font-bold">A</span>
-              </motion.div>
-              <span className="text-xl font-bold font-poppins bg-gradient-to-r from-primary to-emerald-500 bg-clip-text text-transparent">
-                TarbiyaX              </span>
+            {/* Logo (replaced spans with responsive image, no background) */}
+            <Link to="/" className="flex items-center gap-3">
+              {/* wrapper constrains height so the logo never overflows the navbar */}
+              <div className="h-10 sm:h-12 md:h-14 lg:h-16 flex items-center">
+                <motion.img
+                  src="/images/logo.png"
+                  alt="TarbiyaX logo"
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.25 }}
+                  className="max-h-full w-auto object-contain bg-transparent block"
+                />
+              </div>
+              <span className="sr-only">TarbiyaX</span>
             </Link>
 
             {/* Desktop Navigation */}
@@ -123,6 +125,9 @@ export const Navbar = () => {
           </div>
         </div>
       </motion.nav>
+
+  {/* spacer to offset fixed navbar height so page content doesn't sit under the fixed nav */}
+  <div className="h-16 sm:h-20 md:h-24 lg:h-28" aria-hidden="true" />
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (

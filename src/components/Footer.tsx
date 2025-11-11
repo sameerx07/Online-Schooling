@@ -42,12 +42,20 @@ export const Footer = () => {
               viewport={{ once: true }}
               className="mb-4"
             >
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-10 h-10 gradient-primary rounded-lg flex items-center justify-center shadow-glow">
-                  <span className="text-white text-xl font-bold">A</span>
+              <div className="flex items-center gap-4 mb-4">
+                {/* larger responsive logo for footer */}
+                <div className="h-12 sm:h-14 md:h-16 lg:h-20 flex items-center">
+                  <motion.img
+                    src="/images/logo.png"
+                    alt="TarbiyaX logo"
+                    whileHover={{ scale: 1.03 }}
+                    transition={{ duration: 0.2 }}
+                    className="max-h-full w-auto object-contain bg-transparent block"
+                  />
                 </div>
-                <span className="text-xl font-bold font-poppins bg-gradient-to-r from-primary to-emerald-500 bg-clip-text text-transparent">
-                  TarbiyaX                </span>
+                {/* <span className="text-2xl sm:text-3xl font-bold font-poppins bg-gradient-to-r from-primary to-emerald-500 bg-clip-text text-transparent">
+                  TarbiyaX
+                </span> */}
               </div>
               <p className="text-muted-foreground mb-6">
                 Modern online schooling for Grades 1-5, combining world-class curriculum with Islamic teachings.

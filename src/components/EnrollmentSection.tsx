@@ -43,7 +43,7 @@ export const EnrollmentSection = () => {
   };
 
   return (
-    <section id="enrollment" className="py-20 relative overflow-hidden">
+    <section id="enrollment" className="py-16 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10" />
       
       <div className="container mx-auto px-4 relative z-10">

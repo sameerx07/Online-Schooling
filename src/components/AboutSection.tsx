@@ -28,7 +28,7 @@ export const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-20 relative overflow-hidden">
+    <section id="about" className="py-16 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-muted/30 to-transparent" />
       
       <div className="container mx-auto px-4 relative z-10">

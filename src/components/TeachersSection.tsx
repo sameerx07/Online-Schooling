@@ -77,7 +77,7 @@ export const TeachersSection = () => {
   };
 
   return (
-    <section id="teachers" className="py-20 relative overflow-hidden">
+    <section id="teachers" className="py-16 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-accent/5 to-transparent" />
       
       <div className="container mx-auto px-4 relative z-10">

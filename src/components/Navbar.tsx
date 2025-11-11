@@ -43,27 +43,22 @@ export const Navbar = () => {
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${
-          scrolled
-            ? "glass-card shadow-elegant"
-            : "bg-transparent"
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-smooth glass-card ${
+          scrolled ? "shadow-elegant" : ""
+        } h-24 overflow-hidden`}
       >
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            {/* Logo (replaced spans with responsive image, no background) */}
-            <Link to="/" className="flex items-center gap-3">
-              {/* wrapper constrains height so the logo never overflows the navbar */}
-              <div className="h-10 sm:h-12 md:h-14 lg:h-16 flex items-center">
-                <motion.img
-                  src="/images/logo.png"
-                  alt="TarbiyaX logo"
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.25 }}
-                  className="max-h-full w-auto object-contain bg-transparent block"
-                />
-              </div>
-              <span className="sr-only">TarbiyaX</span>
+        <div className="container mx-auto px-4 h-full">
+          <div className="flex items-center justify-between h-full">
+            {/* Logo (big, responsive) */}
+            <Link to="/" aria-label="Al-Fajr Academy" className="flex items-center h-full overflow-hidden" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+              <motion.img
+                whileHover={{ rotate: 360, scale: 1.02 }}
+                transition={{ duration: 0.6 }}
+                src="/images/logo.png"
+                alt="Al-Fajr Academy logo"
+                className="object-contain w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 p-0 max-h-full"
+                style={{ background: "transparent" }}
+              />
             </Link>
 
             {/* Desktop Navigation */}
@@ -88,32 +83,34 @@ export const Navbar = () => {
             </div>
 
             {/* Right Side Actions */}
-            <div className="flex items-center gap-4">
-              {/* Dark Mode Toggle */}
-              <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                onClick={() => setIsDark(!isDark)}
-                className="p-2 rounded-full glass-card"
-              >
-                {isDark ? (
-                  <FiSun className="w-5 h-5 text-accent" />
-                ) : (
-                  <FiMoon className="w-5 h-5 text-primary" />
-                )}
-              </motion.button>
-
-              {/* Enroll Button */}
-              <Link to="/#enrollment">
-                <Button className="hidden md:flex gradient-primary text-white hover:shadow-glow transition-smooth">
-                  Enroll Now
-                </Button>
-              </Link>
+            <div className="flex items-center gap-4 h-full">
+                            {/* Dark Mode Toggle */}
+                            <motion.button
+                              whileHover={{ scale: 1.1 }}
+                              whileTap={{ scale: 0.9 }}
+                              onClick={() => setIsDark(!isDark)}
+                              className=" md:inline-flex p-2 rounded-full glass-card"
+                              aria-label="Toggle dark mode"
+                            >
+                              {isDark ? (
+                                <FiSun className="w-5 h-5 text-accent" />
+                              ) : (
+                                <FiMoon className="w-5 h-5 text-primary" />
+                              )}
+                            </motion.button>
+                            
+                            {/* Enroll Button */}
+                            <Link to="/#enrollment">
+                              <Button className="hidden md:flex gradient-primary text-white hover:shadow-glow transition-smooth">
+                                Enroll Now
+                              </Button>
+                            </Link>
 
               {/* Mobile Menu Toggle */}
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 className="md:hidden p-2"
+                aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
               >
                 {mobileMenuOpen ? (
                   <FiX className="w-6 h-6" />
@@ -126,8 +123,8 @@ export const Navbar = () => {
         </div>
       </motion.nav>
 
-  {/* spacer to offset fixed navbar height so page content doesn't sit under the fixed nav */}
-  <div className="h-16 sm:h-20 md:h-24 lg:h-28" aria-hidden="true" />
+  {/* Spacer to push page content below fixed navbar (matches navbar height) */}
+  <div aria-hidden="true" className="h-24" />
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
@@ -135,7 +132,7 @@ export const Navbar = () => {
           initial={{ opacity: 0, x: "100%" }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: "100%" }}
-          className="fixed inset-0 z-40 md:hidden glass-card pt-20"
+          className="fixed inset-0 z-40 md:hidden glass-card pt-20 md:pt-24"
         >
           <div className="flex flex-col items-center gap-6 p-8">
             {navLinks.map((link) => (
@@ -155,6 +152,20 @@ export const Navbar = () => {
                 Enroll Now
               </Button>
             </Link>
+            {/* Dark Mode Toggle */}
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              onClick={() => setIsDark(!isDark)}
+              className="inline-flex p-2 rounded-full glass-card"
+              aria-label="Toggle dark mode"
+            >
+              {isDark ? (
+                <FiSun className="w-5 h-5 text-accent" />
+              ) : (
+                <FiMoon className="w-5 h-5 text-primary" />
+              )}
+            </motion.button>
           </div>
         </motion.div>
       )}

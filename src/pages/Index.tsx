@@ -6,6 +6,7 @@ import { SubjectsSection } from "@/components/SubjectsSection";
 import { WhyChooseSection } from "@/components/WhyChooseSection";
 import { TeachersSection } from "@/components/TeachersSection";
 import { BlogSection } from "@/components/BlogSection";
+import { FAQSection } from "@/components/FAQSection";
 import { EnrollmentSection } from "@/components/EnrollmentSection";
 import { Chatbot } from "@/components/Chatbot";
 import { AlertBanner } from "@/components/AlertBanner";
@@ -24,6 +25,7 @@ const Index = () => {
         <WhyChooseSection />
         <TeachersSection />
         <BlogSection />
+        <FAQSection />
         <EnrollmentSection />
       </main>
       <Footer />

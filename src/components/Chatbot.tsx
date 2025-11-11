@@ -9,7 +9,7 @@ export const Chatbot = () => {
   const [messages, setMessages] = useState([
     {
       type: "bot",
-      text: "Welcome to Al-Fajr Academy! How can I help you today?",
+      text: "Welcome to TarbiyaX Academy! How can I help you today?",
     },
   ]);
   const [inputValue, setInputValue] = useState("");
@@ -68,7 +68,7 @@ export const Chatbot = () => {
             {/* Header */}
             <div className="gradient-primary p-4 text-white">
               <h3 className="font-poppins font-bold text-lg">
-                Al-Fajr Support
+                TarbiyaX Support
               </h3>
               <p className="text-sm text-white/80">We're here to help!</p>
             </div>

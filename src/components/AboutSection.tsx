@@ -41,7 +41,7 @@ export const AboutSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold font-poppins mb-4">
-            About <span className="bg-gradient-to-r from-primary to-emerald-500 bg-clip-text text-transparent">Al-Fajr Academy</span>
+            About <span className="bg-gradient-to-r from-primary to-emerald-500 bg-clip-text text-transparent">TarbiyaX Academy</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Pioneering online Islamic education since 2014, combining modern pedagogy with traditional values

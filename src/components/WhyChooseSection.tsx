@@ -111,7 +111,7 @@ export const WhyChooseSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold font-poppins mb-4">
-            Why Choose <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Al-Fajr Academy</span>
+            Why Choose <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">TarbiyaX Academy</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Discover what makes us the preferred choice for Islamic education

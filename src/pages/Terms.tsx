@@ -6,7 +6,7 @@ const Terms = () => {
   const sections = [
     {
       title: "Acceptance of Terms",
-      content: "By accessing and using Al-Fajr Academy's services, you accept and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.",
+      content: "By accessing and using TarbiyaX Academy's services, you accept and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.",
     },
     {
       title: "User Accounts",
@@ -22,11 +22,11 @@ const Terms = () => {
     },
     {
       title: "Intellectual Property",
-      content: "All course materials, content, and resources provided through our platform are the intellectual property of Al-Fajr Academy and are protected by copyright laws. Unauthorized use or distribution is prohibited.",
+      content: "All course materials, content, and resources provided through our platform are the intellectual property of TarbiyaX Academy and are protected by copyright laws. Unauthorized use or distribution is prohibited.",
     },
     {
       title: "Limitation of Liability",
-      content: "Al-Fajr Academy shall not be liable for any indirect, incidental, special, or consequential damages arising out of or in connection with your use of our services.",
+      content: "TarbiyaX Academy shall not be liable for any indirect, incidental, special, or consequential damages arising out of or in connection with your use of our services.",
     },
     {
       title: "Modifications to Terms",

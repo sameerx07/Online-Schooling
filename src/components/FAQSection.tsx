@@ -13,7 +13,7 @@ export const FAQSection = () => {
   const faqs = [
     {
       question: "What age groups do you cater to?",
-      answer: "Al-Fajr Academy serves students in Grades 1-5 (typically ages 6-11). Our curriculum is specifically designed for elementary-level learners, with age-appropriate Islamic and academic content.",
+      answer: "TarbiyaX Academy serves students in Grades 1-5 (typically ages 6-11). Our curriculum is specifically designed for elementary-level learners, with age-appropriate Islamic and academic content.",
     },
     {
       question: "How does online learning work for young children?",
@@ -87,8 +87,7 @@ export const FAQSection = () => {
             Frequently Asked <span className="bg-gradient-to-r from-primary to-emerald-500 bg-clip-text text-transparent">Questions</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Find answers to common questions about Al-Fajr Academy
-          </p>
+            Find answers to common questions about TarbiyaX          </p>
         </motion.div>
 
         <motion.div

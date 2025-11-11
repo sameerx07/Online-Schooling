@@ -61,8 +61,7 @@ export const Navbar = () => {
                 <span className="text-white text-xl font-bold">A</span>
               </motion.div>
               <span className="text-xl font-bold font-poppins bg-gradient-to-r from-primary to-emerald-500 bg-clip-text text-transparent">
-                Al-Fajr Academy
-              </span>
+                TarbiyaX              </span>
             </Link>
 
             {/* Desktop Navigation */}

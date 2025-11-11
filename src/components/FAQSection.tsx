@@ -13,7 +13,7 @@ export const FAQSection = () => {
   const faqs = [
     {
       question: "What age groups do you cater to?",
-      answer: "TarbiyaX Academy serves students in Grades 1-5 (typically ages 6-11). Our curriculum is specifically designed for elementary-level learners, with age-appropriate Islamic and academic content.",
+      answer: "TarbiyaX  serves students in Grades 1-5 (typically ages 6-11). Our curriculum is specifically designed for elementary-level learners, with age-appropriate Islamic and academic content.",
     },
     {
       question: "How does online learning work for young children?",

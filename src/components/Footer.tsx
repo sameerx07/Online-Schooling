@@ -99,7 +99,7 @@ export const Footer = () => {
         <div className="border-t border-border pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-muted-foreground text-sm">
-              © {new Date().getFullYear()} TarbiyaX Academy. All rights reserved.
+              © {new Date().getFullYear()} TarbiyaX . All rights reserved.
             </p>
             <div className="flex gap-4 text-sm text-muted-foreground">
               <Link to="/privacy" className="hover:text-primary transition-smooth">

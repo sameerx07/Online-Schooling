@@ -18,7 +18,7 @@ const BlogDetail = () => {
       content: [
         {
           type: "paragraph",
-          text: "Online learning has revolutionized education, and it's proving to be particularly effective for elementary students when implemented correctly. At TarbiyaX Academy, we've seen firsthand how digital education can transform young learners' experiences.",
+          text: "Online learning has revolutionized education, and it's proving to be particularly effective for elementary students when implemented correctly. At TarbiyaX , we've seen firsthand how digital education can transform young learners' experiences.",
         },
         {
           type: "heading",
@@ -58,7 +58,7 @@ const BlogDetail = () => {
         },
         {
           type: "paragraph",
-          text: "At TarbiyaX Academy, we combine the benefits of online learning with Islamic values and expert teaching. Our small class sizes ensure personalized attention, while our curriculum balances screen time with hands-on activities and family engagement.",
+          text: "At TarbiyaX , we combine the benefits of online learning with Islamic values and expert teaching. Our small class sizes ensure personalized attention, while our curriculum balances screen time with hands-on activities and family engagement.",
         },
       ],
     },
@@ -71,7 +71,7 @@ const BlogDetail = () => {
       content: [
         {
           type: "paragraph",
-          text: "In today's rapidly changing world, providing children with a strong Islamic foundation while preparing them for modern challenges is more important than ever. At TarbiyaX Academy, we've designed a curriculum that honors tradition while embracing innovation.",
+          text: "In today's rapidly changing world, providing children with a strong Islamic foundation while preparing them for modern challenges is more important than ever. At TarbiyaX , we've designed a curriculum that honors tradition while embracing innovation.",
         },
         {
           type: "heading",
@@ -164,7 +164,7 @@ const BlogDetail = () => {
         },
         {
           type: "paragraph",
-          text: "Regular communication with your child's teachers is vital. Don't hesitate to reach out with questions or concerns. At TarbiyaX Academy, we encourage parents to be active partners in their child's education.",
+          text: "Regular communication with your child's teachers is vital. Don't hesitate to reach out with questions or concerns. At TarbiyaX , we encourage parents to be active partners in their child's education.",
         },
         {
           type: "heading",
@@ -270,7 +270,7 @@ const BlogDetail = () => {
               {/* CTA */}
               <div className="mt-12 pt-8 border-t border-border/20 text-center">
                 <h3 className="text-2xl font-bold font-poppins mb-4">
-                  Ready to Join TarbiyaX Academy?
+                  Ready to Join TarbiyaX ?
                 </h3>
                 <a href="/#enrollment">
                   <Button

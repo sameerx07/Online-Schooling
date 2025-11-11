@@ -16,7 +16,7 @@ export const BlogSection = () => {
     {
       id: "islamic-education-modern-world",
       title: "Islamic Education in the Modern World",
-      excerpt: "How TarbiyaX Academy seamlessly integrates traditional Islamic values with contemporary educational methods.",
+      excerpt: "How TarbiyaX  seamlessly integrates traditional Islamic values with contemporary educational methods.",
       image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=400&fit=crop",
       author: "Sheikh Omar Hassan",
       date: "March 12, 2024",

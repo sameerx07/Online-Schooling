@@ -9,7 +9,7 @@ export const Chatbot = () => {
   const [messages, setMessages] = useState([
     {
       type: "bot",
-      text: "Welcome to TarbiyaX Academy! How can I help you today?",
+      text: "Welcome to TarbiyaX ! How can I help you today?",
     },
   ]);
   const [inputValue, setInputValue] = useState("");
@@ -26,7 +26,7 @@ export const Chatbot = () => {
         ...prev,
         {
           type: "bot",
-          text: "Thank you for your message! Our team will get back to you shortly. For immediate assistance, please email us at info@alfajracademy.com",
+          text: "Thank you for your message! Our team will get back to you shortly. For immediate assistance, please email us at info@tarbiyax.com",
         },
       ]);
     }, 1000);

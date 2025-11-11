@@ -11,7 +11,7 @@ export const HeroSection = () => {
     {
       type: "image",
       content: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1920&h=1080&fit=crop",
-      title: "Welcome to TarbiyaX Academy",
+      title: "Welcome to TarbiyaX ",
       subtitle: "Online Schooling for Grades 1-5",
     },
     {

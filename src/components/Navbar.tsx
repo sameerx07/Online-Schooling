@@ -52,7 +52,7 @@ export const Navbar = () => {
             {/* Logo (big, responsive) */}
             <Link to="/" aria-label="Al-Fajr Academy" className="flex items-center h-full overflow-hidden" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
               <motion.img
-                whileHover={{ rotate: 360, scale: 1.02 }}
+                // whileHover={{ rotate: 360, scale: 1.02 }}
                 transition={{ duration: 0.6 }}
                 src="/images/logo.png"
                 alt="Al-Fajr Academy logo"
